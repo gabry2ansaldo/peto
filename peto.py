@@ -1,5 +1,18 @@
 import streamlit as st
 
+def commento(n):
+    with st.popover("Commenta"):
+        st.markdown(f"Inserisci il tuo commento sul racconto n.{n}")
+        user_input = st.text_area(f"commento racconto n.{n}")
+
+        if st.button(f"Salva il commento {n}"):
+            if user_input.strip():
+                with open("commenti.txt", "a") as file:
+                    file.write(f"Comm Rac {n}" + user_input + "\n")
+                st.success("Il tuo commento è stato salvato con successo!")
+            else:
+                st.warning("Il campo è vuoto. Per favore, inserisci del testo.")
+
 st.image("peto.jpg")
 
 tab1, tab2, tab3 = st.tabs(["Peto 1", "Peto 2", "Peto 3"])
@@ -55,6 +68,7 @@ with tab1:
 
     Così finisce la ballata di Peto, cavaliere solitario, amico delle creature bizzarre e campione indiscusso del Medioevo più strambo.
     """
+    commento(1)
 with tab2:
     st.title("Le Nuove Avventure di Peto e Monica dai Tentacoli")
     """
@@ -120,6 +134,7 @@ with tab2:
     ## Il Finale
     Alla fine del loro viaggio, Peto e Monica tornarono al punto di partenza, arricchiti non solo dai tesori raccolti, ma soprattutto dall’amicizia che li univa. Insieme, erano pronti ad affrontare qualunque sfida il mondo avesse in serbo, certi che, con un po’ di coraggio e un bel po’ di follia, non c’era nulla che non potessero superare.
     """
+    commento(2)
 with tab3:
     st.title("Le Follie di Peto: La Grande Celebrazione")
     """
@@ -167,3 +182,4 @@ with tab3:
 
     E così, con il cuore pieno e lo spirito leggero, Peto decise che il mondo poteva aspettare per la prossima avventura... almeno fino a quando qualcuno non avesse inventato una nuova follia.
     """
+    commento(3)
