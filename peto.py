@@ -68,7 +68,7 @@ with tab1:
 
     Così finisce la ballata di Peto, cavaliere solitario, amico delle creature bizzarre e campione indiscusso del Medioevo più strambo.
     """
-    commento(1)
+    #commento(1)
 with tab2:
     st.title("Le Nuove Avventure di Peto e Monica dai Tentacoli")
     """
@@ -134,7 +134,7 @@ with tab2:
     ## Il Finale
     Alla fine del loro viaggio, Peto e Monica tornarono al punto di partenza, arricchiti non solo dai tesori raccolti, ma soprattutto dall’amicizia che li univa. Insieme, erano pronti ad affrontare qualunque sfida il mondo avesse in serbo, certi che, con un po’ di coraggio e un bel po’ di follia, non c’era nulla che non potessero superare.
     """
-    commento(2)
+    #commento(2)
 with tab3:
     st.title("Le Follie di Peto: La Grande Celebrazione")
     """
@@ -182,4 +182,4 @@ with tab3:
 
     E così, con il cuore pieno e lo spirito leggero, Peto decise che il mondo poteva aspettare per la prossima avventura... almeno fino a quando qualcuno non avesse inventato una nuova follia.
     """
-    commento(3)
+    #commento(3)
